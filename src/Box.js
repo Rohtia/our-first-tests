@@ -1,4 +1,15 @@
+class Box {
+    constructor (height, width) {
+        this.height = height || 100;
+        this.width = width || 100;
+        this.area;
+        this.calcArea = function calcArea () {
+            this.area = this.height * this.width;
+        }
+    }
+    
+
+}
 
 
-
-// module.exports = Box;
+module.exports = Box;
