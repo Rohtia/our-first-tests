@@ -6,9 +6,15 @@ class Box {
         this.calcArea = function calcArea () {
             this.area = this.height * this.width;
         }
+        this.increaseWidth = function (inc) {
+            this.width = this.width + inc;
+         }
+         this.increaseHeight = function (inc) {
+            this.height = this.height + inc;
+         }
     }
     
-
+ 
 }
 
 

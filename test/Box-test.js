@@ -39,4 +39,26 @@ describe('Box', function() {
         expect(box1.area).to.equal(5000);
         expect(box2.area).to.equal(40000);
     });
+
+    it('should be able to increase the width', function(){
+        const box1 = new Box ();
+        const box2 = new Box (50, 150);
+
+        box1.increaseWidth(20);
+        box2.increaseWidth(40);
+
+        expect(box1.width).to.equal(120);
+        expect(box2.width).to.equal(190)
+    });
+
+    it('should be able to increase the height', function (){
+        const box1 = new Box ();
+        const box2 = new Box (55, 90);
+
+        box1.increaseHeight(30);
+        box2.increaseHeight(50);
+
+        expect(box1.height).to.equal(130);
+        expect(box2.height).to.equal(105);
+    });
 });
